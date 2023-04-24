@@ -1,0 +1,49 @@
+[
+    {
+        "name" : "Basiselementen van jQuery",
+        "duration" : 8,
+        "description": "De basiselementen die je moet kennen om met jQuery om te kunnen gaan."
+    },
+    {
+        "name" : "Events",
+        "duration" : 8,
+        "description": "Dit onderdeel behandelt het opsporen van events en de bijbehorende event handler functies."
+    },
+    {
+        "name" : "Effecten",
+        "duration" : 6,
+        "description": "Dit onderdeel behandelt de standaard jQuery effecten: het tonen en verbergen van elementen, het in- en uitfaden van elementen, sliden van elementen en zelfgedefinieerde animatie."
+    },
+    {
+        "name" : "jQuery UI",
+        "duration" : 4,
+        "description": "Dit hoofdstuk behandelt de jQuery User Interface library waarmee je eenvoudig UI elementen gestyled en met extra functionaliteit aan de webpagina kan toevoegen."
+    },
+    {
+        "name" : "Animatie",
+        "duration" : 4,
+        "description": "Dit onderdeel behandelt extra animatie mogelijkheden. Vooreerst wordt het DRY (Don't Repeat Yourself) programmeer principe behandeld. Verder komen de animate.css library en de jQuery animate() opdracht aan bod."
+    },
+    {
+        "name" : "Plugins toevoegen en instellen",
+        "duration" : 4,
+        "description": "In dit onderdeel bekijken we hoe je gemakkelijk voorgedefinieerde uitbreidingen (plugins) kan toevoegen aan je site en hoe je een gefundeerde keuze kan maken uit al de voorhanden zijnde opties"
+    },
+    {
+        "name" : "Externe data inlezen",
+        "duration" : 8,
+        "description": "In dit onderdeel bekijken we hoe je externe data kan inlezen in je webpagina, dus zonder dat je de webpagina moet refreshen. We beginnen eenvoudig met text en html, vervolgens XML en JSON en uiteindelijk ook met een database koppeling via PHP."
+    },
+    {
+        "name" : "Een eigen plugin definiëren",
+        "duration" : 2,
+        "description": "Dit onderdeel bekijkt hoe je een structuur opzet om een eigen plugin aan te maken."
+    },
+    {
+        "name" : "Eindwerk",
+        "duration" : 12,
+        "description": "Hier breng je al je geleerde skills samen om een prachtig eindwerk te creëren. Als dit succesvol is afgelegd zal je ook een certificaat van slagen ontvangen!"
+    }
+   
+   
+]
