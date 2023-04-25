@@ -1,8 +1,19 @@
 /*
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Silkscreen', cursive;
+#1E1E1E
+#248422
+#6495CA
+#BA8C76
+#D5D5AA
+#AADAFA
+#CC76D1
+#F9D849
 */
 
+:root {
+    --black
+}
 
 #logo {
     font-family: 'Silkscreen', cursive;
