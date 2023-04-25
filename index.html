@@ -16,10 +16,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/countdowntimer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="css/eocjs-newsticker.css" />
+
 
   </head>
   <body>
@@ -58,6 +65,71 @@
         </nav>
       </div>
     </header>
+
+
+    <div class="mainbanner">
+      <div class="container flex">
+        <section class="flex flexcolumn colorbanner">
+          <h1>jQuery</h1>
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star-half-stroke"></i> (1732)
+          </div>
+          <p class="paddingtop50">
+            Programmeer eenvoudig en snel met jQuery. Deze rijke, snelle en
+            elegante uitbreiding op JavaScript is open source – er is een
+            uitgebreide documentatie voorzien en een zeer actieve community.
+            Daardoor wordt er heel regelmatig een update uitgebracht en
+            verschijnen er constant nieuwe plugins. jQuery is een verzameling
+            van functies die de oorspronkelijke JavaScript functies uitbreiden.
+            Je hebt complete controle over de DOM (Document Object Model), met
+            andere woorden de elementen in je HTML-pagina. jQuery ondersteunt
+            alle populaire en minder populaire browsers.
+          </p>
+        </section>
+        <section class="flex flexcolumn stickymenu">
+          <div>
+            <p class="kortingtitle">Nu tijdelijk 50% korting!</p>
+          </div>
+          <div class="flex gap10">
+            <div class="circle center">€ 95</div>
+            <div class="stripedthrough center">190</div>
+            <div id="timer" class="center flipper " 
+                 data-template="ii|ss"
+                 data-reverse="true"
+                 data-labels="Minutes|Seconds">
+                 
+            </div>
+          </div>
+          <div>
+            <p class="kortingtitle">Online op eigen tempo</p>
+          </div>
+
+          <div class="flex gap10">
+            <div><i class="fa-regular fa-clock"></i></div>
+            <span class="stickymenutext"> 60 les momenten - 100% afstand</span>
+          </div>
+          <div class="flex gap10">
+            <div><i class="fa-solid fa-house-laptop"></i></div>
+            <span class="stickymenutext"> Via diggitale leeromgeving</span>
+          </div>
+          <div class="flex gap10">
+            <div><i class="fa-regular fa-flag"></i></div>
+            <span class="stickymenutext">
+              Onmiddelijke start na goedkeuring</span
+            >
+          </div>
+          <div class="flex gap10">
+            <div><i class="fa-regular fa-eject"></i></i></div>
+            <span class="stickymenutext">
+              Je kan je uitschrijven tot 7 dagen na je toegang tot de cursus</span
+            >
+          </div>
+          <button class="navbtn">INSCHRIJVEN</button>
+        </section>
 
 
     <div id="programma" class="container flex">
@@ -180,11 +252,14 @@
       <h2>Jobs die jQuery vereisen</h2>
       <div id="eocjs-newsticker">
         Web Designer - Web Developer - Front End Developer - UI Developer
+
       </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/jquery.flipper-responsive.js"></script>
+
     <script>
       window.jQuery ||
         document.write('<script src="js/jquery-3.6.4.min.js"><\/script>');
