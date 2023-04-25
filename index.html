@@ -16,22 +16,165 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="css/eocjs-newsticker.css" />
+
   </head>
   <body>
     <header>
       <div class="container flex">
-        <h1 id="logo">$('jQuery').learn();</h1>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="#programma">Programma</a></li>
+            <li><a class="menu__item" href="#waarom">Waarom</a></li>
+            <li><a class="menu__item" href="#wie">Wie</a></li>
+            <li><a class="menu__item navbtn" href="#">Inschrijven</a></li>
+          </ul>
+        </div>
+        <a href="#">
+          <h1 id="logo">
+            <span class="dimyellow">$</span><span class="yellowt">(</span
+            ><span class="brownt">'jQuery'</span><span class="yellowt">)</span
+            ><span class="whitet">.</span><span class="dimyellow">learn</span
+            ><span class="yellowt">()</span><span class="whitet">;</span>
+          </h1>
+        </a>
         <nav>
           <a href="#programma">Programma</a>
           <a href="#waarom">Waarom</a>
-          <a href="#wie">Wie?</a>
-          <a href="https://www.cvodeverdieping.be/inschrijven/12171"
+          <a href="#wie">Wie</a>
+          <a
+            class="navbtn"
+            href="https://www.cvodeverdieping.be/inschrijven/12171"
             >Inschrijven</a
           >
         </nav>
       </div>
     </header>
+
+
+    <div id="programma" class="container flex">
+      <div class="left-content">
+        <h2>Wat leer je in deze cursus?</h2>
+        <div id="accordion"></div>
+      </div>
+      <div class="right-content"></div>
+    </div>
+
+    <div id="waarom" class="container flex">
+      <div class="left-content">
+        <h2>Waarom jQuery leren?</h2>
+        <h3>1. jQuery bevordert eenvoud</h3>
+        <p>
+          Ontwikkelaars vinden jQuery intuïtief en gemakkelijk te leren - deze
+          bibliotheek is immers gebouwd op kortere, eenvoudigere code. Dankzij
+          de eenvoudige syntaxis en open coderingsstandaarden kunnen
+          ontwikkelaars de tijd verkorten die nodig is om een applicatie of site
+          te implementeren.
+        </p>
+
+        <h3>
+          2. jQuery-elementen worden ook weergegeven als JavaScript is
+          uitgeschakeld
+        </h3>
+
+        <p>
+          Het manipuleren van het HTML DOM is de meest geaccepteerde praktijk
+          geworden om een webpagina zo te manipuleren dat de inhoud ook wordt
+          weergegeven als JavaScript in de browser is uitgeschakeld. Omdat het
+          HTML DOM altijd aanwezig is, hoef je je ook geen zorgen meer te maken
+          over browserinstellingen.
+        </p>
+
+        <h3>3. jQuery maakt geanimeerde toepassingen net als Flash</h3>
+
+        <p>
+          jQuery gebruikt een combinatie van CSS, HTML, JavaScript en Ajax. Dit
+          zijn allemaal op markup gebaseerde technologieën die bedoeld zijn om
+          goed samen te werken. Dit betekent dat u een optimalisatiestrategie op
+          uw site kunt toepassen zonder dat u speciale instellingen hoeft te
+          maken voor technologieën als Flash. Kortom: u kunt prachtige effecten
+          bereiken die uw publiek betrokken houden.
+        </p>
+
+        <h3>4. jQuery pagina's laden sneller</h3>
+
+        <p>
+          Google en andere zoekmachines gebruiken de laadtijd van pagina's als
+          een van de vele factoren die SEO beïnvloeden. Om deze, en vele andere,
+          redenen moet elke ontwikkelaar ernaar streven om code zo licht en
+          beknopt mogelijk te maken.
+        </p>
+
+        <h3>5. jQuery kan SEO-vriendelijk zijn.</h3>
+
+        <p>
+          U kunt de meest aantrekkelijke site hebben, maar is het de moeite
+          waard als u stijl opoffert voor SEO? De manier waarop u uw site
+          codeert is van grote invloed op de manier waarop hij kan worden
+          gevonden in Google, Bing en andere zoekmachines. Zoals gezegd kan
+          jQuery worden geoptimaliseerd voor zoekmachines, en er zijn veel
+          plug-ins beschikbaar om ontwikkelaars daarbij te helpen. Het insluiten
+          van uw jQuery-elementen met behulp van ongeordende lijsten is een
+          SEO-vriendelijke praktijk die goed werkt.
+        </p>
+      </div>
+      <div class="right-content"></div>
+    </div>
+
+    <div id="wie" class="container flex">
+      <div class="left-content">
+        <h2>Voor wie is deze opleiding geschikt?</h2>
+        <h3>Mensen die van werk willen veranderen</h3>
+
+        <p>
+          Als je geïnteresseerd bent in een overstap naar een technische
+          carrière vanuit een ander veld, kan deze opleiding je voorzien van de
+          nodige vaardigheden om de overstap te maken.
+        </p>
+
+        <h3>Pas afgestudeerden</h3>
+
+        <p>
+          Als je onlangs bent afgestudeerd maar geen achtergrond hebt in
+          programmeren, kan deze opleiding je helpen de vaardigheden te
+          verwerven die je nodig hebt om je eerste baan in de sector te
+          bemachtigen.
+        </p>
+
+        <h3>Autodidactische programmeurs</h3>
+
+        <p>
+          Als je jezelf hebt leren coderen, maar het gevoel hebt dat je een meer
+          gestructureerde leeromgeving nodig hebt om je vaardigheden naar een
+          hoger niveau te tillen, kan deze opleiding je helpen.
+        </p>
+
+        <h3>Ondernemers en freelancers</h3>
+
+        <p>
+          Als je een ondernemer of freelancer bent die zijn eigen tech producten
+          wil ontwikkelen, kan deze opleiding je de vaardigheden geven die je
+          nodig hebt om je ideeën te bouwen en te lanceren.
+        </p>
+
+        <h3>Professionals die zich willen bijscholen</h3>
+
+        <p>
+          Als je al werkzaam bent in de technologie maar je wilt je bijscholen,
+          dan kan deze opleiding je helpen dit snel en efficiënt te doen.
+        </p>
+      </div>
+      <div class="right-content"></div>
+    </div>
+
 
     <div class="sliderbox">
       <h2>Jobs die jQuery vereisen</h2>
@@ -39,12 +182,14 @@
         Web Designer - Web Developer - Front End Developer - UI Developer
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
       window.jQuery ||
         document.write('<script src="js/jquery-3.6.4.min.js"><\/script>');
     </script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/eindwerk.js"></script>
     <script src="js/eocjs-newsticker.js"></script>
   </body>
