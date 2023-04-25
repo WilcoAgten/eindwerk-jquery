@@ -12,18 +12,93 @@ font-family: 'Silkscreen', cursive;
 */
 
 :root {
-    --black
+  --black: #1e1e1e;
+  --green: #248422;
+  --blue: #6495ca;
+  --brown: #ba8c76;
+  --dimyellow: #d5d5aa;
+  --lightblue: #aadafa;
+  --pink: #cc76d1;
+  --yellow: #f9d849;
 }
 
 #logo {
-    font-family: 'Silkscreen', cursive;
-    font-size: 24px;
+  font-family: "Silkscreen", cursive;
+  font-size: 24px;
 }
 
 .flex {
-    display: flex;
+  display: flex;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  color: var(--yellow);
 }
 
 header {
-    background-color: grey;
+  background-color: grey;
+}
+.mainbanner {
+  background-color: black;
+}
+.colorbanner {
+  color: white;
+}
+h1 {
+  font-size: 72px;
+}
+
+p {
+  font-size: 18px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.circle {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: white;
+}
+
+.stripedthrough {
+  color: black;
+  text-decoration: line-through;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.stickymenu {
+  background-color: #d9d9d9;
+  margin: 20px;
+  min-width: 350px;
+  padding: 50px;
+}
+.kortingtitle {
+  color: black;
+  font-weight: bold;
+  font-size: 27px;
+}
+.stickymenutext {
+  font-size: 16px;
+}
+.paddingtop50 {
+  padding-top: 50px;
 }
