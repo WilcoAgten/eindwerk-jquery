@@ -4,6 +4,10 @@ font-family: 'Silkscreen', cursive;
 */
 
 
+#logo {
+    font-family: 'Silkscreen', cursive;
+}
+
 .flex {
     display: flex;
 }
