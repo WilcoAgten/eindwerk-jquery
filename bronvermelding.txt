@@ -1,4 +1,5 @@
-
+https://www.cio.com/article/286944/java-6-things-you-need-to-know-about-jquery.html
+https://www.jqueryscript.net/animation/smooth-eocjs-news-ticker.html
 
 
 mobile hamburger menu -- https://codepen.io/alvarotrigo/pen/yLzaPVJ

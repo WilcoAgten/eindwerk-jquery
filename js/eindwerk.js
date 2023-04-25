@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     
     //wilco
     let accordion = $('#accordion');
@@ -15,14 +16,13 @@ $(document).ready(function () {
             collapsible: true,
             icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
         });
-      });
-
-      
-    
-    
-
-
-    
+      });     
     //einde wilco
+    
+     //Nico
+    $("#eocjs-newsticker").eocjsNewsticker({
+    speed: 25,
+  });
+  //einde Nico
     
 });
