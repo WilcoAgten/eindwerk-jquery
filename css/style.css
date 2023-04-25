@@ -1,17 +1,11 @@
 /*
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Silkscreen', cursive;
-#1E1E1E
-#248422
-#6495CA
-#BA8C76
-#D5D5AA
-#AADAFA
-#CC76D1
-#F9D849
+
 */
 
 :root {
+
   --black: #1e1e1e;
   --green: #248422;
   --blue: #6495ca;
@@ -27,6 +21,109 @@ font-family: 'Silkscreen', cursive;
   font-size: 24px;
 }
 
+body {
+    background-color: var(--black);
+    
+}
+
+
+h2 {
+    font-family: 'Silkscreen', cursive;
+    font-size: 28px;
+    color: var(--brown);
+    margin-bottom: 70px;
+}
+
+.dimyellow {
+    color: var(--dimyellow);
+}
+
+.yellowt {
+    color: var(--yellow);
+}
+
+.brownt {
+    color: var(--brown);
+}
+
+.whitet {
+    color: white;
+}
+
+/*start mobile hamburger menu*/
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--lightblue);
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: black;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: var(--lightblue);
+  font-family: 'Silkscreen', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  color: var(--blue);
+}
+/*einde mobile hamburger*/
+
 .flex {
   display: flex;
 }
@@ -41,9 +138,8 @@ font-family: 'Silkscreen', cursive;
   color: var(--yellow);
 }
 
-header {
-  background-color: grey;
-}
+
+
 .mainbanner {
   background-color: black;
 }
@@ -101,4 +197,116 @@ p {
 }
 .paddingtop50 {
   padding-top: 50px;
+
+
+    background-color: var(--black);
+    font-family: 'Silkscreen', cursive;
+
+}
+
+nav {
+    background-color: inherit;
+    width: 100%;
+    text-align: right;
+    box-shadow: none !important;
+    display: none;
+}
+
+nav a {
+    color: var(--lightblue) !important;
+    margin: 0 20px;
+}
+
+a:visited {
+    color: var(--lightblue);
+}
+
+nav a:hover, nav a:active {
+    color: var(--blue) !important;
+}
+
+
+.navbtn {
+    color: white !important;
+    background-color: var(--pink);
+    border-radius: 8px;
+    padding: 10px 15px;    
+     
+}
+
+.navbtn:hover {
+    background-color: var(--brown);
+    color: white !important;
+}
+
+header .container {
+    align-items: center;
+    height: 100px;
+}
+
+.left-content {
+    width: 70%;
+}
+
+.right-content {
+    width: 30%;
+}
+
+#accordion {
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+#accordion *{
+    border-radius: 0;
+    margin: 0;
+    background-color: #D9D9D9;
+    color: var(--black);
+    padding: 10px 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+
+}
+
+#waarom h3, #wie h3 {
+    color: var(--dimyellow);
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+#waarom p, #wie p {
+    color: white;
+    margin-left: 50px;
+    
+}
+
+@media screen and (max-width: 1230px){
+    header .container {
+    gap: 30%;
+
+    }
+    .navbtn {
+        margin: 20px 20px;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    nav {
+        display: initial;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    header .container {
+        justify-content: space-between;  
+        gap: none;      
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    nav a {
+        margin: 0 35px;
+    }
 }
