@@ -5,6 +5,7 @@
   width: 400px;
   height: 120px;
   margin: 0 auto;
+  font-family: "Fira Sans", sans-serif;
 }
 
 .sliderbox h2 {
@@ -13,6 +14,7 @@
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
   font-weight: 500;
   padding-left: 30px;
+  margin-bottom: 0px;
 }
 
 .eocjs-newsticker {
@@ -61,7 +63,7 @@
 @media screen and (min-width: 1230px) {
   .sliderbox {
     position: fixed;
-    bottom: 100px;
+    bottom: 130px;
     right: 0;
   }
 }
