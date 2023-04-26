@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
     <link rel="stylesheet" href="css/eocjs-newsticker.css" />
+    <link rel="stylesheet" href="css/flipclock.css">
 
 
   </head>
@@ -69,7 +70,7 @@
 
     <div class="mainbanner">
       <div class="container flex">
-        <section class="flex flexcolumn colorbanner">
+        <section class="flex flexcolumn colorbanner left-content">
           <h1>jQuery</h1>
           <div class="review">
             <i class="fa-solid fa-star"></i>
@@ -92,43 +93,43 @@
         </section>
         <section class="flex flexcolumn stickymenu">
           <div>
-            <p class="kortingtitle">Nu tijdelijk 50% korting!</p>
+            <h4 class="kortingtitle">Nu tijdelijk 50% korting!</h4>
           </div>
-          <div class="flex gap10">
+          <div class="flex gap30 center">
             <div class="circle center">€ 95</div>
             <div class="stripedthrough center">190</div>
-            <div id="timer" class="center flipper " 
-                 data-template="ii|ss"
-                 data-reverse="true"
-                 data-labels="Minutes|Seconds">
-                 
-            </div>
+            
           </div>
+
+          <div class="clock"></div>
+          <div class="message"></div>
           <div>
             <p class="kortingtitle">Online op eigen tempo</p>
           </div>
 
+          
+
           <div class="flex gap10">
-            <div><i class="fa-regular fa-clock"></i></div>
+            <div><i class="fa-regular fa-clock fa-fw"></i></div>
             <span class="stickymenutext"> 60 les momenten - 100% afstand</span>
           </div>
           <div class="flex gap10">
-            <div><i class="fa-solid fa-house-laptop"></i></div>
-            <span class="stickymenutext"> Via diggitale leeromgeving</span>
+            <div><i class="fa-solid fa-house-laptop fa-fw"></i></div>
+            <span class="stickymenutext"> Via digitale leeromgeving</span>
           </div>
           <div class="flex gap10">
-            <div><i class="fa-regular fa-flag"></i></div>
+            <div><i class="fa-regular fa-flag fa-fw"></i></div>
             <span class="stickymenutext">
               Onmiddelijke start na goedkeuring</span
             >
           </div>
           <div class="flex gap10">
-            <div><i class="fa-regular fa-eject"></i></i></div>
+            <div><i class="fa-solid fa-xmark fa-fw"></i></i></div>
             <span class="stickymenutext">
               Je kan je uitschrijven tot 7 dagen na je toegang tot de cursus</span
             >
           </div>
-          <button class="navbtn">INSCHRIJVEN</button>
+          <button class="navbtn mt10">INSCHRIJVEN</button>
         </section>
       </div>
     </div>
@@ -260,7 +261,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="/js/jquery.flipper-responsive.js"></script>
 
     <script>
       window.jQuery ||
@@ -269,5 +269,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/eindwerk.js"></script>
     <script src="js/eocjs-newsticker.js"></script>
+    <script src="js/flipclock.min.js""></script>
+    <script src="js/jquery.sticky.js"></script>
   </body>
 </html>
