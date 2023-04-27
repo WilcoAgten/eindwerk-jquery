@@ -72,7 +72,7 @@ $(document).ready(function () {
         type: "POST",
         data: "email=" + emailInput.val(),
         success: function() {
-          alert('Bedankt voor je inschrijving op onze nieuwsbrief')
+          alert('Bedankt voor je inschrijving op onze nieuwsbrief');
       }
       
       });

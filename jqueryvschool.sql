@@ -36,15 +36,7 @@ CREATE TABLE `subscribers` (
 -- Dumping data for table `subscribers`
 --
 
-INSERT INTO `subscribers` (`id`, `email`) VALUES
-(1, 'qsdfqsf'),
-(2, 'sqdfdsqfdsqfqsf'),
-(3, 'qsdfqdsfqsf'),
-(4, 'sqdfsqdf'),
-(5, 'wilcol@wilco.be'),
-(6, 'wilcol@wilco.be'),
-(7, 'qdfqqsdf'),
-(8, 'wilco@wilco.be');
+
 
 --
 -- Indexes for dumped tables
