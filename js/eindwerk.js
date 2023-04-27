@@ -63,12 +63,19 @@ $(document).ready(function () {
 
   //einde joris
   let emailInput = $("#email");
-  $(".ftrbtn").on("click", function () {
+  $(".ftrbtn").on("click", function (e) {
+    e.preventDefault();
     console.log(emailInput.val());
-    $.ajax({
-      url: "index.php",
-      type: "POST",
-      data: "email=" + emailInput.val(),
-    });
+    if (emailInput.val().length != 0) {
+      $.ajax({
+        url: "subscribers.php",
+        type: "POST",
+        data: "email=" + emailInput.val(),
+        success: function() {
+          alert('Bedankt voor je inschrijving op onze nieuwsbrief')
+      }
+      
+      });
+    }
   });
 });

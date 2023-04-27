@@ -1,7 +1,5 @@
 <?php
 
-die;
-
 $conn = new PDO(
     "mysql:host=localhost;dbname=jqueryvschool",
     "root",
