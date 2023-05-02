@@ -32,6 +32,10 @@ $(document).ready(function () {
     });
   }
 
+  $('#logo').animate({ 'font-size': '24px' }, 1000, 'linear');
+
+ 
+
   //einde wilco
 
   //Nico
