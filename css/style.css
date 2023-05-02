@@ -24,6 +24,10 @@ CSS VERDEELD DOOR HTML DEEL !!!!
   --yellow: #f9d849;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #logo {
   font-family: "Silkscreen", cursive;
   font-size: 0px;
