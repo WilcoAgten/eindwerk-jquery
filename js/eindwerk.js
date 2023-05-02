@@ -33,16 +33,11 @@ $(document).ready(function () {
   }
 
   $('#logo').animate({ 'font-size': '24px' }, 1000, 'linear');
-
  
 
   //einde wilco
 
-  //Nico
-  $("#eocjs-newsticker").eocjsNewsticker({
-    speed: 25,
-  });
-  //einde Nico
+ 
 
   //joris
 
@@ -66,6 +61,13 @@ $(document).ready(function () {
   clock.start();
 
   //einde joris
+
+   //nico
+  $("#eocjs-newsticker").eocjsNewsticker({
+    speed: 25,
+  });
+
+
   let emailInput = $("#email");
   $(".ftrbtn").on("click", function (e) {
     e.preventDefault();
@@ -82,4 +84,6 @@ $(document).ready(function () {
       });
     }
   });
+
+    //einde nico
 });
