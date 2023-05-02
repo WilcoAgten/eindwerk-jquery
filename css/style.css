@@ -285,16 +285,24 @@ header .container {
 }
 
 #waarom h3,
-#wie h3 {
+#wie h3,
+#fuw h3 {
   color: var(--dimyellow);
   font-size: 18px;
   margin-left: 50px;
 }
 
 #waarom p,
-#wie p {
+#wie p,
+#fuw p,
+#fuw ul {
   color: white;
   margin-left: 50px;
+}
+
+#fuw button {
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 footer {

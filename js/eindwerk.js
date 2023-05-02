@@ -33,6 +33,10 @@ $(document).ready(function () {
   }
 
   $('#logo').animate({ 'font-size': '24px' }, 1000, 'linear');
+
+  $("#fuw button").on("click", function () {
+    window.open("https://www.cvodeverdieping.be/opleidingen/full-stack-webdeveloper", "_blank");
+  });
  
 
   //einde wilco
@@ -42,7 +46,6 @@ $(document).ready(function () {
   //joris
 
   $(".stickymenu button").on("click", function () {
-    console.log("test");
     window.open("https://www.cvodeverdieping.be/inschrijven/12171", "_blank");
   });
 
