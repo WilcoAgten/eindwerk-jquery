@@ -32,16 +32,16 @@ $(document).ready(function () {
     });
   }
 
-  $('#logo').animate({ 'font-size': '24px' }, 1000, 'linear');
+  $("#logo").animate({ "font-size": "24px" }, 1000, "linear");
 
   $("#fuw button").on("click", function () {
-    window.open("https://www.cvodeverdieping.be/opleidingen/full-stack-webdeveloper", "_blank");
+    window.open(
+      "https://www.cvodeverdieping.be/opleidingen/full-stack-webdeveloper",
+      "_blank"
+    );
   });
- 
 
   //einde wilco
-
- 
 
   //joris
 
@@ -63,13 +63,23 @@ $(document).ready(function () {
   clock.setTime(1799);
   clock.start();
 
+  $(".sliderbox").css("right", "-1000px");
+
+  $(document).scroll(function () {
+    let y = $(this).scrollTop();
+    if (y > 600) {
+      $(".sliderbox").css({ right: "0px", transition: "ease-in-out 1s" });
+    } else {
+      $(".sliderbox").css("right", "-1000px");
+    }
+  });
+
   //einde joris
 
-   //nico
+  //nico
   $("#eocjs-newsticker").eocjsNewsticker({
     speed: 25,
   });
-
 
   let emailInput = $("#email");
   $(".ftrbtn").on("click", function (e) {
@@ -80,13 +90,26 @@ $(document).ready(function () {
         url: "subscribers.php",
         type: "POST",
         data: "email=" + emailInput.val(),
-        success: function() {
-          alert('Bedankt voor je inschrijving op onze nieuwsbrief');
-      }
-      
+        success: function () {
+          alert("Bedankt voor je inschrijving op onze nieuwsbrief");
+        },
       });
     }
   });
 
-    //einde nico
+  $(window).scroll(function () {
+    $(".fadeIn").each(function (i) {
+      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height() + 800;
+
+      console.log(bottom_of_element);
+      console.log(bottom_of_window);
+
+      if (bottom_of_window > bottom_of_element) {
+        $(this).animate({ opacity: "1" }, 1200);
+      }
+    });
+  });
+
+  //einde nico
 });
